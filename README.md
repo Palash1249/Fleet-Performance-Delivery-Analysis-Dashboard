@@ -21,13 +21,11 @@ performance and identify areas that may need attention.
 
 ## Dashboard Preview
 
-Add a screenshot of your own customized dashboard to
-`assets/dashboard-preview.png`, then use the image reference below:
+<p align="center">
+  <img src="asset/fleet_performance_dashboard.png" width="900">
+</p>
 
 ![Fleet Performance Dashboard]
-<p align="center">
-  <img src="https://raw.githubusercontent.com/bibythayyil/bibythayyil/main/assets/fleet_performance_dashboard.png" width="900">
-</p>
 
 For a full-page preview, see `Dashboard.pdf` if that file is included in
 this repository.
@@ -139,7 +137,7 @@ repository.
 1.  Clone this repository:
 
     ``` bash
-    git clone https://github.com/Palash1249/Fleet-Performance-PowerBI.git
+    git clone https://github.com/Palash1249/Fleet-Performance-Delivery-Analysis-Dashboard.git
     ```
 
 2.  Open the project folder.
@@ -194,20 +192,9 @@ checked it.
 
 ------------------------------------------------------------------------
 
-## Acknowledgements
-
-Original project source and inspiration:
-
-[Original GitHub repository](https://github.com/bibythayyil/bibythayyil)
-
-Please review the original repository's licence and attribution
-requirements before redistributing its files or a modified version.
-
-------------------------------------------------------------------------
-
 ## Author
 
 **Palash Halder**
 
 -   GitHub: [Palash1249](https://github.com/Palash1249)
--   LinkedIn: \[Add your LinkedIn profile URL\]
+-   LinkedIn: \[https://www.linkedin.com/in/palashhalder07]
