@@ -1,129 +1,210 @@
 # Fleet Performance & Delivery Efficiency Dashboard
 
-> An AI-powered Power BI dashboard analyzing fleet trip performance, fuel efficiency, on-time delivery rates, and cost per km for a logistics company — built as a module end assignment for the Data Analytics course.
+> An interactive Power BI dashboard for exploring fleet trip
+> performance, fuel efficiency, on-time delivery rates, and cost per
+> kilometre for a logistics use case.
 
----
-
-## Project Showcase
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/bibythayyil/bibythayyil/main/assets/fleet_performance_dashboard.png" width="900">
-</p>
-
----
+------------------------------------------------------------------------
 
 ## Project Overview
 
-A logistics company wanted to analyze its fleet performance in terms of on-time deliveries, fuel efficiency, and cost per kilometre. This project builds an interactive Power BI dashboard using trip and vehicle data, incorporating DAX measures and AI-powered visuals to uncover operational insights and support route and fleet optimization decisions.
+This project uses trip-level and vehicle information to examine
+logistics operations, including delivery performance, fuel consumption,
+vehicle costs, and route efficiency. The Power BI report brings these
+measures together in interactive visuals to help explore operational
+performance and identify areas that may need attention.
 
----
+**Project type:** Data Analytics / Business Intelligence\
+**Primary tool:** Microsoft Power BI Desktop
+
+------------------------------------------------------------------------
 
 ## Dashboard Preview
 
-![Fleet Performance Dashboard](Dashboard.pdf)
+Add a screenshot of your own customized dashboard to
+`assets/dashboard-preview.png`, then use the image reference below:
 
-> Open `Dashboard.pdf` for a full visual preview of the dashboard without downloading Power BI.
+![Fleet Performance Dashboard](assets/dashboard-preview.png)
 
----
+For a full-page preview, see `Dashboard.pdf` if that file is included in
+this repository.
+
+------------------------------------------------------------------------
 
 ## Dataset
 
-**File:** `logistics_project_dataset.xlsx`
+**Source file:** `logistics_project_dataset.xlsx`
 
-| Sheet | Records | Description |
-|---|---|---|
-| Trip_Data | 50 trips | Trip ID, Vehicle ID, Driver ID, Origin, Destination, Distance (km), Fuel Consumed (L), Delivery Status, Delivery Date |
-| Vehicle_Master | 7 vehicles | Vehicle ID, Vehicle Type (Van, Truck, Mini-Truck), Capacity (kg), Maintenance Cost |
+  ------------------------------------------------------------------------
+  Sheet                 Records stated in the source Description
+                                              README 
+  --------------------- ---------------------------- ---------------------
+  `Trip_Data`                               50 trips Trip ID, Vehicle ID,
+                                                     Driver ID, Origin,
+                                                     Destination, Distance
+                                                     (km), Fuel Consumed
+                                                     (L), Delivery Status,
+                                                     Delivery Date
+
+  `Vehicle_Master`                        7 vehicles Vehicle ID, Vehicle
+                                                     Type (Van, Truck,
+                                                     Mini-Truck), Capacity
+                                                     (kg), Maintenance
+                                                     Cost
+  ------------------------------------------------------------------------
 
 ### Delivery Status Summary
 
-| Status | Count |
-|---|---|
-| On-Time | 30 (60%) |
-| Late | 20 (40%) |
+The source README reports the following distribution:
 
----
+  Status      Count   Share
+  --------- ------- -------
+  On-Time        30     60%
+  Late           20     40%
 
-## Project Tasks
+Please confirm these counts against the dataset if you modify or replace
+the source data.
 
-### 1. Data Cleaning & Modeling
-- Fixed missing fuel consumption values using mean imputation
-- Created a relationship between Trip_Data and Vehicle_Master tables using Vehicle_ID
+------------------------------------------------------------------------
 
-### 2. DAX Measures
+## Analysis & Dashboard Components
 
-| Measure | Formula |
-|---|---|
-| Fuel Efficiency | Distance / Fuel Consumed |
-| On-Time Delivery % | On-Time Trips / Total Trips |
-| Cost per km | (Fuel Cost + Maintenance Cost) / Distance |
+### 1. Data Preparation and Modeling
 
-> Fuel cost assumed at ₹100 per litre as per assignment specification
+The original project documentation describes: - Handling missing
+fuel-consumption values using mean imputation. - Creating a relationship
+between `Trip_Data` and `Vehicle_Master` using `Vehicle_ID`.
+
+Verify these steps in the Power Query Editor and model view of the PBIX
+file before treating them as final implementation details.
+
+### 2. Key Measures
+
+The original project documentation lists the following KPI logic:
+
+  Measure              Calculation
+  -------------------- -------------------------------------------
+  Fuel Efficiency      Distance / Fuel Consumed
+  On-Time Delivery %   On-Time Trips / Total Trips
+  Cost per km          (Fuel Cost + Maintenance Cost) / Distance
+
+The source README states that fuel cost is assumed to be **₹100 per
+litre** as specified in the assignment. Check the actual DAX and cost
+calculation in the PBIX before relying on this assumption.
 
 ### 3. Visualizations
 
-| Visual Type | Description |
-|---|---|
-| Bar Chart | On-Time Delivery % by Destination |
-| Line Chart | Fuel Efficiency trend by Delivery Date |
-| Card | Average Delivery Time |
-| Card | Average Cost per km |
-| Pie Chart | Vehicle Type vs Average Maintenance Cost |
+The original documentation describes these visuals:
+
+  Visual       Analysis
+  ------------ ------------------------------------------
+  Bar chart    On-Time Delivery % by Destination
+  Line chart   Fuel Efficiency trend by Delivery Date
+  KPI card     Average Delivery Time
+  KPI card     Average Cost per km
+  Pie chart    Vehicle Type vs Average Maintenance Cost
 
 ### 4. AI-Powered Visuals
 
-| Visual | Configuration |
-|---|---|
-| Q&A Visual | Prompt: "Average Cost per km by vehicle type?" |
-| Key Influencers | Analyze: Delivery Status — Explained by: Distance (km), Vehicle Type, Driver ID |
-| Decomposition Tree | Analyze: Cost per km — Explained by: Vehicle Type, Maintenance Cost, Distance (km) |
+The original README lists: - **Q&A visual:** Average Cost per km by
+vehicle type. - **Key Influencers:** Delivery Status explained by
+Distance, Vehicle Type, and Driver ID. - **Decomposition Tree:** Cost
+per km explored by Vehicle Type, Maintenance Cost, and Distance.
 
----
+Availability and configuration of these visuals may depend on the Power
+BI version and sign-in.
 
-## Files in This Repository
+------------------------------------------------------------------------
 
-| File | Description |
-|---|---|
-| `Fleet_Performance_and_Delivery_Efficiency.pbix` | Power BI dashboard file |
-| `logistics_project_dataset.xlsx` | Source dataset (Trip_Data and Vehicle_Master sheets) |
-| `Dashboard.pdf` | Dashboard visual preview |
-| `README.md` | Project documentation |
+## Repository Contents
 
----
+  File                                               Description
+  -------------------------------------------------- -----------------------------------
+  `Fleet_Performance_and_Delivery_Efficiency.pbix`   Power BI report
+  `logistics_project_dataset.xlsx`                   Source dataset
+  `Dashboard.pdf`                                    Dashboard preview, if included
+  `assets/dashboard-preview.png`                     Repository screenshot to be added
+  `README.md`                                        Project documentation
+
+File names may differ depending on the contents of the downloaded
+repository.
+
+------------------------------------------------------------------------
 
 ## How to Use
 
-1. Clone or download this repository
-```bash
-git clone https://github.com/bibythayyil/fleet-performance-delivery-analysis-powerbi
-```
+1.  Clone this repository:
 
-2. For a quick preview — open `Dashboard.pdf`
+    ``` bash
+    git clone https://github.com/Palash1249/Fleet-Performance-PowerBI.git
+    ```
 
-3. For the full interactive dashboard — open `Fleet_Performance_and_Delivery_Efficiency.pbix` in **Microsoft Power BI Desktop**
+2.  Open the project folder.
 
-4. If prompted to refresh data, update the source path to point to `logistics_project_dataset.xlsx` on your local machine
+3.  For a quick visual preview, open `Dashboard.pdf` if it is included.
 
-5. Explore the dashboard pages for fleet performance and delivery insights
+4.  Open `Fleet_Performance_and_Delivery_Efficiency.pbix` in **Microsoft
+    Power BI Desktop**.
 
-> **Note:** Power BI Desktop is free to download from [Microsoft](https://powerbi.microsoft.com/desktop/). AI-powered visuals (Key Influencers, Decomposition Tree) require a Power BI account sign-in.
+5.  If Power BI prompts you to refresh the data, update the source path
+    to the local `logistics_project_dataset.xlsx` file.
 
----
+6.  Explore the report pages, filters, measures, and visuals.
+
+Power BI Desktop is available from [Microsoft Power
+BI](https://powerbi.microsoft.com/desktop/).
+
+------------------------------------------------------------------------
 
 ## Tools Used
 
-| Tool | Purpose |
-|---|---|
-| Microsoft Power BI Desktop | Dashboard development and visualization |
-| Power Query | Data cleaning and transformation |
-| DAX | Calculated measures and KPIs |
-| AI Visuals | Q&A, Key Influencers, Decomposition Tree |
-| Microsoft Excel | Source dataset |
+  -----------------------------------------------------------------------
+  Tool                                Purpose
+  ----------------------------------- -----------------------------------
+  Microsoft Power BI Desktop          Dashboard development and
+                                      visualization
 
----
+  Power Query                         Data cleaning and transformation
+
+  DAX                                 Measures and KPI calculations
+
+  Microsoft Excel                     Source dataset
+
+  Power BI AI visuals                 Q&A, Key Influencers, and
+                                      Decomposition Tree, where available
+  -----------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+## Learning & Customization Notes
+
+This repository is based on an existing project. I am using it as a
+learning reference and documenting any changes I make to the report.
+
+Add your own completed work here before publishing, for example: -
+Dashboard layout or theme changes. - New or modified DAX measures. -
+Additional report pages or visuals. - Further analysis and observations
+from the dataset.
+
+Do not list a customization unless you have actually completed and
+checked it.
+
+------------------------------------------------------------------------
+
+## Acknowledgements
+
+Original project source and inspiration:
+
+[Original GitHub repository](https://github.com/bibythayyil/bibythayyil)
+
+Please review the original repository's licence and attribution
+requirements before redistributing its files or a modified version.
+
+------------------------------------------------------------------------
 
 ## Author
 
-**Bibin T S**
+**Palash Halder**
 
----
+-   GitHub: [Palash1249](https://github.com/Palash1249)
+-   LinkedIn: \[Add your LinkedIn profile URL\]
