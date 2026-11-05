@@ -24,7 +24,10 @@ performance and identify areas that may need attention.
 Add a screenshot of your own customized dashboard to
 `assets/dashboard-preview.png`, then use the image reference below:
 
-![Fleet Performance Dashboard](assets/dashboard-preview.png)
+![Fleet Performance Dashboard]
+<p align="center">
+  <img src="https://raw.githubusercontent.com/bibythayyil/bibythayyil/main/assets/fleet_performance_dashboard.png" width="900">
+</p>
 
 For a full-page preview, see `Dashboard.pdf` if that file is included in
 this repository.
