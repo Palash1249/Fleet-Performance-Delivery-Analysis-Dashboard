@@ -197,4 +197,4 @@ checked it.
 **Palash Halder**
 
 -   GitHub: [Palash1249](https://github.com/Palash1249)
--   LinkedIn: \[https://www.linkedin.com/in/palashhalder07]
+-   LinkedIn: [Palash1249](https://www.linkedin.com/in/palashhalder07)
